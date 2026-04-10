@@ -1,0 +1,107 @@
+    @font-face {
+        font-family: 'Anime-Ace';
+        src: url('fonts/Anime Ace v3.ttf');
+        src: url('fonts/Anime\ Ace.ttf');
+        src: url(fonts/animeace2_bld.otf);
+        src: url(fonts/animeace2_ital.otf);
+        src: url(fonts/animeace2_reg.otf);
+        font-weight: normal;
+        font-style: normal;
+    }
+    body {
+        background-color: #1a1a1a;
+        color: #2abd84;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;   
+    }
+
+    h1 {
+        font-family: 'Anime-Ace';
+        color: #2abd84;
+        font-size: 80px;
+        text-shadow: 2px 2px 10px rgba(255,0,255,0.5)
+    }
+
+    .btn {
+        background-color: rgb(55, 77, 77);
+        color: rgb(114, 120, 145);
+        border: none;
+    
+        padding: 20px 40px;
+        margin: 50px;
+
+        font-size: 40px;
+        cursor: pointer;
+        text-decoration: none;
+        box-sizing: border-box;
+        outline: 4px dotted black;
+        border-radius: 15px;
+    }
+    
+    .btn:hover {
+        background-color: rgb(131, 131, 226);
+        transform: scale(1.05);
+        transition: 0.5s;
+        outline: solid pink 5px;
+    }
+    .text-small {
+        font-size: 20px;
+    }
+    .yellow-container {
+        display: flex;
+        gap: 20px;
+    }
+    .square {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        border: none; /* Убираем стандартную рамку */
+        border-radius: 15px; /* Скругляем саму кнопку */
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://w3.org width='100%25' height='100%25' fill='none' rx='15' ry='15' stroke='white' stroke-width='4' stroke-dasharray='10%2c 15' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        overflow: hidden;
+
+    }
+     .small-box {
+        width: 160px;
+        height: 140px;
+        background-color: white;
+        border-radius: 20px;
+        transform: translateY(10px);
+        display: flex;           /* Включаем режим выравнивания */
+        justify-content: center; /* Центрируем по горизонтали */
+        align-items: center;
+
+    }
+    .profile-pic {
+    width: 150px;           /* Фиксируем ширину */
+    height: 150px;          /* Фиксируем высоту */
+    object-fit: cover;      /* ГЛАВНОЕ: картинка не сплющится, а красиво впишется в квадрат, как кроп в Ai */
+    border-radius: 50%;     /* Сделаем её идеально круглой */
+    border: 3px solid #2abd84;
+    box-shadow: 0 10px 10px rgba(5,0,5,0.5);
+    transition: transform 0.5s ease;
+    }
+    .profile-pic:hover {
+    transform: scale(1.1);
+    }
+    .pic {
+    font-family: 'Anime-Ace';
+    transition: transform 0.5s ease;
+    object-fit: cover;
+    color: black;
+
+    }
+    .pic:hover {
+    transform: scale(1.1);
+    }
+   
